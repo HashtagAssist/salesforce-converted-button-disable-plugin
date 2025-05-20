@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Button Disabler",
+  "version": "1.0",
+  "description": "Disable SFDC Lightning Path Button when Converted Tab is selected",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.lightning.force.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+} 
